@@ -1,37 +1,74 @@
 {
-  "name": "vite-project",
+  "name": "admin",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
     "@material-tailwind/react": "^2.1.8",
-    "@mui/material": "^5.15.6",
-    "@mui/styled-engine-sc": "^6.0.0-alpha.13",
-    "chart.js": "^4.4.1",
-    "firebase": "^10.7.2",
+    "@mui/material": "^5.15.3",
+    "@netlify/plugin-lighthouse": "^5.0.0",
+    "@supabase/supabase-js": "^2.38.5",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/node": "^20.10.4",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@types/react-leaflet": "^3.0.0",
+    "apexcharts": "^3.45.2",
+    "axios": "^1.6.2",
+    "build": "^0.1.4",
+    "chart.js": "^4.4.0",
+    "d3-geo": "^3.1.0",
+    "firebase": "^10.6.0",
+    "install": "^0.13.0",
+    "leaflet": "^1.9.4",
+    "npm": "^10.2.4",
+    "package-name": "^0.1.0",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
     "react-chartjs-2": "^5.2.0",
+    "react-diagrams": "^1.0.1",
     "react-dom": "^18.2.0",
+    "react-flow-renderer": "^10.3.17",
+    "react-leaflet": "^4.2.1",
     "react-modal": "^3.16.1",
-    "react-router-dom": "^6.21.3",
-    "styled-components": "^6.1.8",
-    "uuid": "^9.0.1"
+    "react-router-dom": "^6.19.0",
+    "react-scripts": "^5.0.1",
+    "react-simple-maps": "^3.0.0",
+    "react-svg": "^16.1.31",
+    "react-use-websocket": "^4.5.0",
+    "typescript": "^5.3.3",
+    "uuid": "^9.0.1",
+    "vercel": "^33.2.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "eslint": "^8.55.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.0.8"
+    "@svgr/webpack": "^8.1.0"
   }
 }

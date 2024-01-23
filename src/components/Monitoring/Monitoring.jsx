@@ -1,3 +1,4 @@
+import Nav from "../Nav/Nav";
 import "./Monitoring.css";
 import {
   Chart as ChartJS,
@@ -12,7 +13,6 @@ import { Card, CardBody } from "@material-tailwind/react";
 import Chart from "react-apexcharts";
 
 import { useState, useEffect } from "react";
-import Nav from "../Nav/Nav";
 
 ChartJS.register(
   PointElement,

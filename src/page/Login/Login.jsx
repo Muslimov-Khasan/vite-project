@@ -1,5 +1,5 @@
 import "./Login.css";
-import loginImage from "../Assets/img/loginimage.svg";
+import loginImage from "../../Assets/img/loginimage.svg";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
