@@ -1,16 +1,17 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Login from "./page/Login/Login";
-import Category from "./components/category/category";
-import ImageUpload from "./components/Banner/Banner";
-import News from "./components/News/News";
-import Header from "./components/Header/Header";
-import AddCategory from "./components/addcategory/addcategory";
+import Login from "./page/Login";
 import Monitoring from "./components/Monitoring/Monitoring";
-import FAQ from "./components/FAQ/FAQ";
+import AddCategory from "./components/addcategory/addcategory";
+import Category from "./components/category/category";
+import Header from "./components/Header/Header";
+import News from "./components/News/News";
 import Users from "./components/users/users";
 import Moderator from "./components/Moderator/Moderator";
+import Banner from "./components/Banner/Banner";
 import Contact from "./components/Contact/Contact";
+import FAQ from "./components/FAQ/FAQ";
+
 function App() {
   return (
     <div className="app">
@@ -24,7 +25,7 @@ function App() {
         <Route path="/users" element={<Users />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/Moderator" element={<Moderator />} />
-        <Route path="/image-upload" element={<ImageUpload />} />
+        <Route path="/image-upload" element={<Banner />} />
         <Route path="/Contact" element={<Contact/>} />
       </Routes>
     </div>
